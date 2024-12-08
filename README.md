@@ -1,28 +1,27 @@
 # yoproyecto
 
-No se que se supone que debo escribir, pero bueno.
-Este proyecto trata sobre mí, con diferentes apartados:
+This project is about me, with different sections:
 
 ## Intro
 
-Aquí me presento y explico la razón de la página. Se puede ver el título de los apartados o un botón que puedes clicar para acceder directamente al apartado que gustes ver, y una foto mía junto a un formulario sobre esta. Luego de esta introducción, se encuentran los apartados.
+Here I introduce myself and explain the reason for the page. You can see the title of the sections or a button that you can click to go directly to the section you want to see, and a picture of me together with a formulary about it. After this introduction, you will find the sections.
 
 ## Why here?
 
-Cuento brevemente cómo terminé estudiando informática y mi expericia en ella, cambiando la tipografía dependiendo de si hablo del pasado o del presente.
+I briefly tell how I ended up studying computer science and my experience in it, changing the typography depending on whether I talk about the past or the present.
 
 ## Likes ando hobbies
 
-Hablo sobre las cosas que me gustan y disfruto hacer. Aparte del texto que lo resume, tiene un botón que muestra una galería de imágenes sobre cosas específicas, todas con un hober que contiene una explicación breve de qué es y por qué me gusta. En caso de estar en móvil, la galería ocupará toda la pantalla.
-Puedes salir de ella con el botón ubicado abajo de la galería.
+I talk about the things I like and enjoy doing. Apart from the text that summarises it, it has a button that shows a gallery of images about specific things, all with a hover containing a brief explanation of what it is and why I like it. If you are on mobile, the gallery will take up the whole screen.
+You can exit it with the button at the bottom of the gallery.
 
 ## Future
 
-Hecho una breve vista atrás, de lo ocurrido recientemente en mi vida. Cosas que siento que me han hecho cambiar tanto en muy poco tiempo.
-Buenas y malas experiencias, todas necesarias para convertirme en quien soy ahora, y ahora esperar las nuevas que me hagan la persona que seré en el futuro.
+I take a brief look back at what has happened in my life recently. Things that I feel have made me change so much in such a short time.
+Good and bad experiences, all necessary to make me who I am now, and now waiting for the new ones that will make me the person I will be in the future.
 
 ### Footer
 
-Aparte de estos apartados, también están el header (que nombre en la introducción) y el footer, donde uno suele dejar sus redes sociales y demás información. Pero al carecer de estas decidí poner dos cosas:
-Mi canal de youtube, donde hago videos tontos (no muy frecuentes) que disfruto hacer.
-El Instagram de mi hermano, quién me impulsó a hacer ejercicio, y gracias a él me siento feliz con mi cuerpo.
+Apart from these sections, there is also the header (which I name in the introduction) and the footer, where you usually leave your social networks and other information. But lacking these I decided to put two things:
+My youtube channel, where I make silly videos (not very often) that I enjoy making.
+My brother's Instagram, who encouraged me to exercise, and thanks to him I feel happy with my body.
