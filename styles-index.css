@@ -1,0 +1,616 @@
+:root {
+  --rosa: #ff4c90;
+  --naranja: #fe9754;
+  --amarillo: #ffe857;
+  --amaClaro: #fefd9f;
+  --azul: #cdfef6;
+}
+
+@font-face {
+  font-family: "P3";
+  src: url(fonts/BMSPA___.TTF);
+}
+
+@font-face {
+  font-family: "P4";
+  src: url(fonts/monbaiti.ttf);
+}
+
+@font-face {
+  font-family: "yakuza";
+  src: url(fonts/edosz.ttf);
+}
+
+* {
+  font-family: "P4";
+}
+
+html {
+  background-color: var(--azul);
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 17px;
+}
+
+h1 {
+  font-family: "P3";
+  font-size: 4vw;
+  padding-top: 150px;
+}
+
+h2 {
+  font-family: "P3";
+  font-size: 3vw;
+}
+
+p {
+  font-size: 2vw;
+}
+
+p.lore {
+  font-family: "yakuza";
+}
+
+p.likes{
+  font-size: 25px;
+}
+
+footer {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  background-color: var(--naranja);
+}
+
+footer p {
+  font-size: 4vw;
+  margin: 0 10% 2% 10%;
+}
+
+.spam-texto {
+  text-align: start;
+  font-size: 2vw;
+  margin: 0 0 0 50px;
+}
+
+.spam-logo img {
+  width: 175px;
+  margin-bottom: 25px;
+}
+
+.navbar {
+  width: 85%;
+  font-size: 3vw;
+  margin: auto;
+  padding: 7px;
+  border: 7px solid var(--naranja);
+  background-color: var(--amaClaro);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  float: inline-end;
+}
+
+.menu li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+#me {
+  float: inline-start;
+}
+
+#hmenu {
+  display: none;
+  visibility: hidden;
+  font-size: 2vw;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+#hmenu li {
+  padding: 2px;
+  border: 7px solid var(--naranja);
+  border-radius: 12px;
+  background-color: var(--amaClaro);
+  margin-left: 50%;
+}
+
+#icono {
+  width: 40px;
+  visibility: hidden;
+  cursor: pointer;
+  float: right
+}
+
+#intro,
+#why-here,
+#hobbies,
+#future {
+  margin: auto;
+  width: 80%;
+
+}
+
+#form-feeling,
+#form-hat,
+#form-glasses,
+#form-back {
+  visibility: hidden;
+  color: var(--rosa);
+}
+
+.my-intro {
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.my-intro p {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+  font-size: 3vw;
+}
+
+#intro p{
+  font-size: 3vw;
+
+}
+
+.formulary {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 2vw;
+  
+}
+
+label, span {
+  font-family: "P4";
+}
+
+input{
+  width: 30%;
+  height: 30%;
+  font-size: 2vw;
+}
+
+button {
+  text-align: center;
+  font-size: 2vw;
+  border: 8px solid var(--amarillo);
+  border-radius: 10px;
+  background-color: var(--amaClaro);
+}
+
+button:hover {
+
+  border: 8px solid var(--rosa);
+  background-color: var(--amarillo);
+}
+
+.my-photo {
+  display: flex;
+  height: 425px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.gallery img {
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+  object-fit: contain;
+
+}
+
+.card {
+  position: relative; 
+  display: inline-block;
+}
+
+.card img {
+  display: block;
+  margin: 20px;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.text-about-likes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+  /* text-align: center; */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card img:hover {
+  filter: brightness(0.5);
+}
+
+.card:hover .text-about-likes {
+  opacity: 1;
+}
+
+#likes-list {
+  position: fixed;
+  top: 0;
+  left: -90vw;
+  overflow-y: auto;
+  padding: 10px;
+  height: 100vh;
+  width: 35%;
+  background-color: var(--rosa);
+  transition: 1s;
+}
+
+#likes-list h2, #likes-list p {
+  margin: 5% 5% 0% 5%;
+}
+
+
+#likes-list.likes-list-opened {
+  left: 0vw;
+  transition: 1s;
+}
+
+#likes-list-opened.likes-list {
+  left: -50vw;
+  transition: 1s;
+}
+
+.open-likes-list-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+#open-likes-list-button {
+  display: flex;
+  justify-content: end;
+}
+
+.close-likes-list-button button {
+  display: flex;
+  justify-content: center;
+  border: 8px solid var(--amarillo);
+  background-color: var(--amaClaro);
+  margin-bottom: 0;
+}
+
+.close-likes-list-button button:hover {
+
+  border: 8px solid var(--azul);
+  background-color: var(--amarillo);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width: 992px) {
+
+
+  .navbar {
+    background-color: var(--amaClaro);
+        font-size: 5vw;
+    /* padding: 7px; */
+    border: 7px solid var(--naranja);
+    /* background-color: var(--amaClaro); */
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+  }
+
+  .here-part,
+  .hobbies-part,
+  .future-part {
+    font-size: 0;
+  }
+
+  footer p {
+    font-size: 3vw;
+  }
+
+  .spam-texto {
+    text-align: start;
+    font-size: 2vw;
+    margin: 0 0 0 20px;
+  }
+
+  .spam-logo img {
+    width: 125px;
+    
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  button:hover {
+
+    border: 8px solid var(--rosa);
+    background-color: var(--amarillo);
+  }
+  
+
+  #me {
+    visibility: visible;
+  }
+
+  #hmenu {
+    visibility: visible;
+    display: none;
+    text-align: end;
+    width: 80%;
+    list-style: none;
+  }
+
+  #hmenu li, #hmenu a {
+    font-size: 4vw;
+    margin-right: 10px;
+  }
+
+  #icono {
+    width: 75px;
+    visibility: visible;
+    margin-top: 5px;
+    margin-right: 2px;
+  }
+
+  .my-photo {
+    display: flex;
+    height: 400px;
+    margin-right: 20px;
+    margin-left: -60px;
+    margin-bottom: 50px;
+  }
+
+  .formulary {
+
+    font-size: 3vw;
+    
+  }
+
+  button {
+    text-align: center;
+    font-size: 6vw;
+    border: 12px solid var(--amarillo);
+    border-radius: 10px;
+    background-color: var(--amaClaro);
+  }
+  
+  button:hover {
+  
+    border: 12px solid var(--rosa);
+    background-color: var(--amarillo);
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .gallery img {
+    height: 800px;
+    width: 800px;
+    margin: 20px;
+    object-fit: contain;
+  
+  }
+  
+  .card {
+    position: relative; 
+    display: inline-block;
+  }
+  
+  .card img {
+    display: block;
+    margin: 20px;
+    object-fit: contain;
+    transition: 0.5s;
+  }
+  
+  .text-about-likes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+    
+
+  .card img:hover {
+    filter: brightness(0.5);
+  }
+  
+  .card:hover .text-about-likes {
+    opacity: 1;
+  }
+  
+  #likes-list {
+    position: fixed;
+    top: 0;
+    left: -150vw;
+    overflow-y: auto;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--rosa);
+    transition: 1s;
+  }
+  
+  h1 {
+  font-size: 3vw;
+  padding-top: 150px;
+  }
+
+  h2 {
+    font-family: "P3";
+    font-size: 4vw;
+  }
+
+  #likes-list p {
+    font-size: 4vw;
+    margin-bottom: 40px;
+  }
+  
+  #likes-list.likes-list-opened {
+    left: 0vw;
+    transition: 1s;
+  }
+  
+  #likes-list-opened.likes-list {
+    left: -50vw;
+    transition: 1s;
+  }
+  
+  .open-likes-list-button button {
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    border: 12px solid var(--amarillo);
+    border-radius: 10px;
+    background-color: var(--amaClaro);
+    border: 12px solid var(--amarillo);
+    background-color: var(--amaClaro);
+  }
+  
+  .open-likes-list-button button:hover {
+    border: 12px solid var(--rosa);
+    background-color: var(--amarillo);
+  }
+
+  .close-likes-list-button button {
+    display: flex;
+    justify-content: center;
+    font-size: 10vw;
+    border: 16px solid var(--amarillo);
+    background-color: var(--amaClaro);
+    margin-top: 25px;
+    margin-bottom: 55px;
+  }
+  
+  .close-likes-list-button button:hover {
+
+    border: 16px solid var(--azul);
+    background-color: var(--amarillo);
+  }
+
+  #open-likes-list-button {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    background-color: var(--amaClaro);
+    font-size: 6vw;
+
+    padding: 15px;
+
+  }
+
+  .here-part,
+  .hobbies-part,
+  .future-part {
+    font-size: 0;
+  }
+  
+  .my-photo {
+    display: flex;
+    height: 250px;
+    margin-right: 20px;
+    margin-left: -20px;
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  footer p {
+    font-size: 4vw;
+  }
+
+  .spam-texto {
+    font-size: 3vw
+  }
+
+  .spam-logo img {
+    width: 100px;
+  }
+
+
+  .menu {
+    visibility: hidden;
+  }
+
+  #me {
+    visibility: visible;
+  }
+
+  #hmenu {
+    visibility: visible;
+    display: none;
+    text-align: end;
+    width: 80%;
+    margin: auto;
+    list-style: none;
+  }
+
+
+  #hmenu a {
+    font-size: 5vw;
+    margin-right: 0;
+  }
+
+  #icono {
+    width: 100px;
+    visibility: visible;
+    margin-top: -10px;
+  }
+
+  .gallery img {
+    height: 750px;
+    width: 750px;
+    margin: 30px;
+  }
+}
