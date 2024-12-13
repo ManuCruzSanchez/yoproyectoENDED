@@ -55,7 +55,7 @@ p.lore {
   font-family: "yakuza";
 }
 
-p.likes{
+p.likes {
   font-size: 25px;
 }
 
@@ -159,7 +159,7 @@ footer p {
 .my-intro {
   display: flex;
   justify-content: flex-start;
-  
+
 }
 
 .my-intro p {
@@ -169,7 +169,7 @@ footer p {
   font-size: 3vw;
 }
 
-#intro p{
+#intro p {
   font-size: 3vw;
 
 }
@@ -179,16 +179,16 @@ footer p {
   flex-direction: column;
   justify-content: flex-start;
   font-size: 2vw;
-  
+
 }
 
-label, span {
+label,
+span {
   font-family: "P4";
 }
 
-input{
+input {
   width: 30%;
-  height: 30%;
   font-size: 2vw;
 }
 
@@ -218,7 +218,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
+
 }
 
 .gallery img {
@@ -230,7 +230,7 @@ button:hover {
 }
 
 .card {
-  position: relative; 
+  position: relative;
   display: inline-block;
 }
 
@@ -274,7 +274,8 @@ button:hover {
   transition: 1s;
 }
 
-#likes-list h2, #likes-list p {
+#likes-list h2,
+#likes-list p {
   margin: 5% 5% 0% 5%;
 }
 
@@ -305,7 +306,7 @@ button:hover {
   justify-content: center;
   border: 8px solid var(--amarillo);
   background-color: var(--amaClaro);
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 
 .close-likes-list-button button:hover {
@@ -321,12 +322,8 @@ button:hover {
 
   .navbar {
     background-color: var(--amaClaro);
-        font-size: 5vw;
-    /* padding: 7px; */
+    font-size: 5vw;
     border: 7px solid var(--naranja);
-    /* background-color: var(--amaClaro); */
-    /* border-radius: 10px; */
-    /* overflow: hidden; */
   }
 
   .here-part,
@@ -347,7 +344,7 @@ button:hover {
 
   .spam-logo img {
     width: 125px;
-    
+
   }
 
   .menu {
@@ -359,7 +356,7 @@ button:hover {
     border: 8px solid var(--rosa);
     background-color: var(--amarillo);
   }
-  
+
 
   #me {
     visibility: visible;
@@ -373,7 +370,8 @@ button:hover {
     list-style: none;
   }
 
-  #hmenu li, #hmenu a {
+  #hmenu li,
+  #hmenu a {
     font-size: 4vw;
     margin-right: 10px;
   }
@@ -396,7 +394,7 @@ button:hover {
   .formulary {
 
     font-size: 3vw;
-    
+
   }
 
   button {
@@ -406,9 +404,9 @@ button:hover {
     border-radius: 10px;
     background-color: var(--amaClaro);
   }
-  
+
   button:hover {
-  
+
     border: 12px solid var(--rosa);
     background-color: var(--amarillo);
   }
@@ -418,29 +416,28 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
+
   }
-  
+
   .gallery img {
     height: 800px;
     width: 800px;
     margin: 20px;
     object-fit: contain;
-  
   }
-  
+
   .card {
-    position: relative; 
+    position: relative;
     display: inline-block;
   }
-  
+
   .card img {
     display: block;
     margin: 20px;
     object-fit: contain;
     transition: 0.5s;
   }
-  
+
   .text-about-likes {
     position: absolute;
     top: 50%;
@@ -452,16 +449,16 @@ button:hover {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-    
+
 
   .card img:hover {
     filter: brightness(0.5);
   }
-  
+
   .card:hover .text-about-likes {
     opacity: 1;
   }
-  
+
   #likes-list {
     position: fixed;
     top: 0;
@@ -473,10 +470,10 @@ button:hover {
     background-color: var(--rosa);
     transition: 1s;
   }
-  
+
   h1 {
-  font-size: 3vw;
-  padding-top: 150px;
+    font-size: 3vw;
+    padding-top: 150px;
   }
 
   h2 {
@@ -488,17 +485,17 @@ button:hover {
     font-size: 4vw;
     margin-bottom: 40px;
   }
-  
+
   #likes-list.likes-list-opened {
     left: 0vw;
     transition: 1s;
   }
-  
+
   #likes-list-opened.likes-list {
     left: -50vw;
     transition: 1s;
   }
-  
+
   .open-likes-list-button button {
     display: flex;
     justify-content: center;
@@ -509,7 +506,7 @@ button:hover {
     border: 12px solid var(--amarillo);
     background-color: var(--amaClaro);
   }
-  
+
   .open-likes-list-button button:hover {
     border: 12px solid var(--rosa);
     background-color: var(--amarillo);
@@ -524,7 +521,7 @@ button:hover {
     margin-top: 25px;
     margin-bottom: 55px;
   }
-  
+
   .close-likes-list-button button:hover {
 
     border: 16px solid var(--azul);
@@ -553,7 +550,7 @@ button:hover {
   .future-part {
     font-size: 0;
   }
-  
+
   .my-photo {
     display: flex;
     height: 250px;
@@ -577,7 +574,6 @@ button:hover {
   .spam-logo img {
     width: 100px;
   }
-
 
   .menu {
     visibility: hidden;

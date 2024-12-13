@@ -79,7 +79,7 @@ function listenToClickToCursor() {
   const CLOSE_BUTTON = document.getElementById("close-likes-list-button");
   OPEN_BUTTON.addEventListener("click", moveSideMenu);
   CLOSE_BUTTON.addEventListener("click", moveSideMenu);
-  
+
 }
 
 function moveSideMenu() {
