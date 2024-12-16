@@ -39,7 +39,7 @@ header {
 h1 {
   font-family: "P3";
   font-size: 4vw;
-  padding-top: 150px;
+  padding-top: 175px;
 }
 
 h2 {
@@ -332,6 +332,12 @@ button:hover {
     font-size: 0;
   }
 
+  footer {
+    width: 100%;
+    margin-top: 30px;
+    background-color: var(--naranja);
+  }
+
   footer p {
     font-size: 3vw;
   }
@@ -538,11 +544,10 @@ button:hover {
 
 @media only screen and (max-width: 800px) {
   .navbar {
+    font-size: 8vw;
+    padding: 3px;
+    border: 5px solid var(--naranja);
     background-color: var(--amaClaro);
-    font-size: 6vw;
-
-    padding: 15px;
-
   }
 
   .here-part,
@@ -561,6 +566,12 @@ button:hover {
 
   h2 {
     font-size: 6vw;
+  }
+
+  footer {
+    width: 100%;
+    margin-top: 5px;
+    background-color: var(--naranja);
   }
 
   footer p {
@@ -601,7 +612,8 @@ button:hover {
   #icono {
     width: 100px;
     visibility: visible;
-    margin-top: -10px;
+    margin-top: -2px;
+    margin-right: 8px;
   }
 
   .gallery img {
